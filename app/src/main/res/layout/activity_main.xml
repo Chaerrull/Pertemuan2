@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/lightblue">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="172dp"
+        android:layout_height="154dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen100"
+        android:layout_marginBottom="@dimen/dimen40"
+        android:background="@drawable/ic_welcome_logo" />
+
+    <EditText
+        android:id="@+id/nama_awal"
+        android:layout_below="@+id/logo"
+        android:layout_width="350dp"
+        android:layout_marginTop="@dimen/dimen10"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="343dp"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/background"
+        android:textColorHint="@color/background"
+        android:textColor="@color/background" />
+
+    <EditText
+        android:id="@+id/pass_awal"
+        android:layout_below="@+id/nama_awal"
+        android:layout_width="350dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="343dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/background"
+        android:textColorHint="@color/background"
+        android:textColor="@color/background"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass_awal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/login"
+        android:textSize="@dimen/font18"
+        android:textColor="@color/background"
+        android:background="@drawable/btn_putih"/>
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_below="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/background"
+        android:text="@string/or"
+        android:textSize="@dimen/font20"/>
+
+    <Button
+        android:id="@+id/btn_facebook"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or"
+        android:background="@drawable/btn_putih"
+        android:text="@string/facebook"
+        android:textColor="@color/background"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/font18"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_welcome_fb_login"
+        android:drawablePadding="-20dp"
+        android:paddingStart="@dimen/dimen30"/>
+
+    <TextView
+        android:id="@+id/akun"
+        android:layout_below="@+id/btn_facebook"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/shadowheader"
+        android:text="@string/akun"
+        android:textSize="@dimen/font17"/>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_below="@+id/btn_facebook"
+        android:layout_toEndOf="@+id/akun"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/dimen5"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/background"
+        android:text="@string/registrasi"
+        android:textSize="@dimen/font17"/>
+
+
+</RelativeLayout>

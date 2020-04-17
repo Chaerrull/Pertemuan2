@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Pertemuan2</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="facebook">CONNECT WITH FACEBOOK</string>
+    <string name="akun">doesn`t have account ? </string>
+    <string name="registrasi">Register</string>
+    <string name="title_activity_register">Register</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string-array name="bloodType">
+        <item>Blood Type</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+
+    <string-array name="reshus">
+        <item>Rhesus</item>
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="job">
+        <item>Job</item>
+        <item>Programmer</item>
+        <item>Wirausaha</item>
+        <item>Penyiar</item>
+    </string-array>
+
+
+    <string name="repassword">Retype Password</string>
+    <string name="personal">Personal</string>
+    <string name="organization">Organization</string>
+    <string name="homeAdd">Home Address</string>
+    <string name="defLocation">Default Location</string>
+    <string name="aggrement">Agree with Term and Conditions</string>
+    <string name="almost_there">Almost There</string>
+    <string name="thanks">Thank you for registering with us. One more step. you need to check your email to activate your account</string>
+    <string name="verify">Verify</string>
+
+    <string name="verifyAcc">Verify Your Account</string>
+    <string name="sendVerify">We have send verification code to email</string>
+    <string name="enterCode">enter verification code here</string>
+    <string name="send">Send</string>
+    <string name="doesntGetCode">doesn`t get the code ?</string>
+    <string name="resend">Resend</string>
+
+    <string name="chaerrull">Mohammad Chaerrull F</string>
+    <string name="golDar">Blood Type : O</string>
+    <string name="tujuhlima">75</string>
+    <string name="seratus">100</string>
+    <string name="tigatigasepuluh">330</string>
+    <string name="bloodGive">Blood Give</string>
+    <string name="bloodReceive">Blood Received</string>
+    <string name="thx">Thanks</string>
+    <string name="searchDonor">Search Donor</string>
+    <string name="bloodNeed">Blood Needed</string>
+    <string name="massage">Message</string>
+    <string name="donorHistory">Donor History</string>
+    <string name="donorNearYou">Search Donor Near You</string>
+    <string name="userNeedBlood">4 User Need blood</string>
+    <string name="newMessage">5 New Message</string>
+    <string name="GiveDonor">6 Gives, 2 Received</string>
+
+
+</resources>

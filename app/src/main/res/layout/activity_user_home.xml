@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHome"
+    >
+
+    <FrameLayout
+        android:id="@+id/frutama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_header"
+        android:padding="@dimen/dimen10"
+            >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_side_menu"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_notification"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dimen5"/>
+    </FrameLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myPict"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/my_id"
+        app:civ_border_color="@color/background"
+        app:civ_border_width="@dimen/dimen3"
+        android:layout_below="@+id/frutama"
+        android:layout_marginTop="-60dp"/>
+
+    <TextView
+        android:id="@+id/chaerrull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myPict"
+        android:text="@string/chaerrull"
+        android:textSize="@dimen/font28"
+        android:textColor="@color/lightblue"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/goldar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chaerrull"
+        android:text="@string/golDar"
+        android:textSize="@dimen/font22"
+        android:textColor="@color/Fonttitle"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/dividerAwal"
+        android:layout_below="@+id/goldar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen5"
+        android:layout_marginTop="@dimen/dimen5"
+        android:background="@drawable/divider_abu"
+        />
+
+    <TextView
+        android:id="@+id/set_750"
+        android:layout_below="@+id/dividerAwal"
+        android:layout_alignParentStart="true"
+        android:text="@string/tujuhlima"
+        android:textSize="@dimen/font36"
+        android:textColor="@color/lightblue"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/dimen50"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/set_750_bawah"
+        android:layout_below="@id/set_750"
+        android:layout_width="@dimen/dimen80"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/bloodGive"
+        android:layout_alignStart="@+id/set_750"
+        android:layout_marginStart="-20dp"
+        android:textSize="@dimen/font16"
+        android:textColor="@color/Fonttitle"
+        />
+
+
+    <TextView
+        android:id="@+id/set_100"
+        android:layout_below="@+id/dividerAwal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/seratus"
+        android:textSize="@dimen/font36"
+        android:textColor="@color/lightblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/set_100_bawah"
+        android:layout_below="@id/set_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bloodReceive"
+        android:textColor="@color/Fonttitle"
+        android:textSize="@dimen/font16"
+        />
+
+    <TextView
+        android:id="@+id/set_330"
+        android:layout_below="@+id/dividerAwal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen50"
+        android:text="@string/tigatigasepuluh"
+        android:textSize="@dimen/font36"
+        android:textColor="@color/lightblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/set_330_bawah"
+        android:layout_below="@id/set_330"
+        android:layout_width="@dimen/dimen80"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/Fonttitle"
+        android:text="@string/thx"
+        android:layout_alignEnd="@+id/set_330"
+        android:layout_marginEnd="-10dp"
+        android:textSize="@dimen/font16"
+        />
+
+
+
+    <View
+        android:id="@+id/dividerAkhir"
+        android:layout_below="@+id/set_100_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen5"
+        android:layout_marginBottom="@dimen/dimen20"
+        android:layout_marginTop="@dimen/dimen5"
+        android:background="@drawable/divider_abu"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_search_donor"
+        android:layout_below="@id/dividerAkhir"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/dimen45"
+        android:layout_width="@dimen/dimen110"
+        android:layout_height="@dimen/dimen110"
+        android:background="@drawable/ic_search_donor"/>
+    <TextView
+        android:id="@+id/iv_search_donor_text"
+        android:layout_width="@dimen/dimen110"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_search_donor"
+        android:layout_alignStart="@+id/iv_search_donor"
+        android:textColor="@color/Fonttitle"
+        android:gravity="center"
+        android:text="@string/searchDonor"
+        android:textSize="@dimen/font18"/>
+    <TextView
+        android:id="@+id/iv_search_donor_sub"
+        android:layout_width="@dimen/dimen138"
+        android:layout_marginStart="-14dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_search_donor_text"
+        android:layout_alignStart="@+id/iv_search_donor"
+        android:gravity="center"
+        android:text="@string/donorNearYou"
+        android:textSize="@dimen/font13"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_message"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/dimen45"
+        android:layout_above="@+id/iv_message_text"
+        android:layout_width="@dimen/dimen110"
+        android:layout_height="@dimen/dimen110"
+        android:background="@drawable/ic_message"/>
+    <TextView
+        android:id="@+id/iv_message_text"
+        android:layout_width="@dimen/dimen110"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_message"
+        android:layout_above="@+id/iv_message_sub"
+        android:textColor="@color/Fonttitle"
+        android:gravity="center"
+        android:text="@string/massage"
+        android:textSize="@dimen/font18"/>
+    <TextView
+        android:id="@+id/iv_message_sub"
+        android:layout_width="@dimen/dimen110"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_message"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/newMessage"
+        android:textSize="@dimen/font13"
+        android:layout_marginBottom="@dimen/dimen20"/>
+
+
+
+    <ImageView
+        android:id="@+id/iv_blood_needed"
+        android:layout_below="@id/dividerAkhir"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen45"
+        android:layout_width="@dimen/dimen110"
+        android:layout_height="@dimen/dimen110"
+        android:background="@drawable/ic_blood_needed"/>
+    <TextView
+        android:id="@+id/iv_blood_needed_text"
+        android:layout_width="@dimen/dimen110"
+        android:layout_below="@id/iv_blood_needed"
+        android:layout_alignStart="@+id/iv_blood_needed"
+        android:textColor="@color/Fonttitle"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/bloodNeed"
+        android:textSize="@dimen/font17"/>
+    <TextView
+        android:id="@+id/iv_blood_needed_sub"
+        android:layout_width="@dimen/dimen110"
+        android:layout_below="@id/iv_blood_needed_text"
+        android:layout_alignStart="@+id/iv_blood_needed"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/userNeedBlood"
+        android:textSize="@dimen/font13"/>
+
+
+
+    <ImageView
+        android:id="@+id/iv_history"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen45"
+        android:layout_above="@+id/iv_history_text"
+        android:layout_width="@dimen/dimen110"
+        android:layout_height="@dimen/dimen110"
+        android:background="@drawable/ic_donor_history"/>
+    <TextView
+        android:id="@+id/iv_history_text"
+        android:layout_width="@dimen/dimen110"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_blood_needed"
+        android:textColor="@color/Fonttitle"
+        android:layout_above="@+id/iv_message_sub"
+        android:gravity="center"
+        android:text="@string/donorHistory"
+        android:textSize="@dimen/font18"/>
+    <TextView
+        android:id="@+id/iv_history_sub"
+        android:layout_width="@dimen/dimen110"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_blood_needed"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/GiveDonor"
+        android:textSize="@dimen/font13"
+        android:layout_marginBottom="@dimen/dimen20"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verify"
+    android:background="@color/lightblue"
+    android:padding="@dimen/dimen40">
+
+    <TextView
+        android:layout_marginTop="@dimen/dimen138"
+        android:id="@+id/verifyAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verifyAcc"
+        android:textColor="@color/background"
+        android:textSize="@dimen/font36"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/SendVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sendVerify"
+        android:textColor="@color/background"
+        android:layout_marginTop="@dimen/dimen10"
+        android:textSize="@dimen/font15"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/verifyAcc"
+        />
+
+    <EditText
+        android:id="@+id/enterVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background"
+        android:gravity="center"
+        android:text="@string/enterCode"
+        android:textColor="@color/background"
+        android:layout_marginTop="@dimen/dimen50"
+        android:textSize="@dimen/font15"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/SendVerify"
+        />
+
+    <Button
+        android:id="@+id/btn_send_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_putih"
+        android:text="@string/send"
+        android:textColor="@color/background"
+        android:textSize="@dimen/font17"
+        android:layout_below="@id/enterVerify"
+        android:layout_marginTop="@dimen/dimen25"
+        />
+
+    <EditText
+        android:id="@+id/doesnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doesntGetCode"
+        android:textColor="@color/background"
+        android:textSize="@dimen/font15"
+        android:layout_below="@id/btn_send_verify"
+        android:layout_marginStart="@dimen/dimen60"
+        android:layout_marginTop="@dimen/dimen10"
+        />
+    <EditText
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resend"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        android:textSize="@dimen/font15"
+        android:layout_below="@id/btn_send_verify"
+        android:layout_toEndOf="@+id/doesnt"
+        android:layout_marginStart="@dimen/dimen2"
+        android:layout_marginTop="@dimen/dimen10"
+        />
+
+</RelativeLayout>

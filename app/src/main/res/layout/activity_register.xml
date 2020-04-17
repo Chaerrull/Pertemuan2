@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    >
+
+    <EditText
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:text="@string/registrasi"
+        android:drawablePadding="@dimen/dimen35"
+        android:textSize="@dimen/font20"
+        android:paddingStart="@dimen/dimen10"
+        android:textColor="@color/background"
+        android:drawableLeft="@drawable/ic_header_back"
+        android:layout_height="@dimen/dimen50"
+        android:background="@drawable/ic_header"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen30">
+
+    <EditText
+        android:id="@+id/edt_user_Reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen28"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/font17"
+        android:textColorHint="@color/Fonttitle"
+        />
+
+    <EditText
+        android:id="@+id/edt_email_reg"
+        android:layout_below="@+id/edt_user_Reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textSize="@dimen/font17"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/Fonttitle"/>
+
+    <EditText
+        android:id="@+id/edt_phone_reg"
+        android:layout_below="@+id/edt_email_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:textSize="@dimen/font17"
+        android:inputType="number"
+        android:backgroundTint="@color/background"
+        android:textColorHint="@color/Fonttitle"/>
+
+
+    <RadioButton
+            android:id="@+id/rb_male_reg"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_below="@+id/edt_phone_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textColor="@color/Fonttitle"
+            android:textSize="@dimen/font18"
+       />
+
+    <RadioButton
+            android:id="@+id/rb_female_reg"
+            android:layout_below="@+id/edt_phone_reg"
+            android:layout_marginTop="@dimen/dimen10"
+            android:layout_toEndOf="@+id/rb_male_reg"
+            android:layout_marginStart="@dimen/dimen150"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textColor="@color/Fonttitle"
+            android:textSize="@dimen/font18"/>
+
+    <Spinner
+        android:id="@+id/sp_blood_reg"
+        android:layout_marginTop="@dimen/dimen15"
+        android:layout_below="@+id/rb_male_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/bloodType"
+
+        />
+
+    <Spinner
+        android:id="@+id/sp_reshus_reg"
+        android:layout_marginTop="@dimen/dimen15"
+        android:layout_below="@+id/rb_female_reg"
+        android:layout_toEndOf="@id/sp_blood_reg"
+        android:layout_marginStart="@dimen/dimen50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/reshus"
+        />
+
+    <EditText
+        android:id="@+id/pass_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_blood_reg"
+        android:hint="@string/password"
+        android:layout_marginTop="@dimen/dimen5"
+        android:textSize="@dimen/font17"
+        android:textColorHint="@color/Fonttitle"
+        />
+
+    <EditText
+        android:id="@+id/repass_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass_reg"
+        android:hint="@string/repassword"
+        android:layout_marginTop="@dimen/dimen5"
+        android:textSize="@dimen/font17"
+        android:textColorHint="@color/Fonttitle"
+        />
+
+    <RadioButton
+        android:id="@+id/rb_personal_reg"
+        android:layout_marginTop="@dimen/dimen10"
+        android:layout_below="@+id/repass_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personal"
+        android:textColor="@color/Fonttitle"
+        android:textSize="@dimen/font18"
+        />
+
+    <RadioButton
+        android:id="@+id/rb_organization_reg"
+        android:layout_below="@+id/repass_reg"
+        android:layout_marginTop="@dimen/dimen10"
+        android:layout_toEndOf="@+id/rb_personal_reg"
+        android:layout_marginStart="@dimen/dimen114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organization"
+        android:textColor="@color/Fonttitle"
+        android:textSize="@dimen/font18"/>
+
+    <Spinner
+
+        android:id="@+id/sp_job_reg"
+        android:layout_marginTop="@dimen/dimen15"
+        android:layout_below="@+id/rb_personal_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/job"
+        />
+
+    <EditText
+        android:id="@+id/edt_address_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_job_reg"
+        android:hint="@string/homeAdd"
+        android:textColorHint="@color/Fonttitle"
+        android:textSize="@dimen/font17" />
+
+    <EditText
+        android:id="@+id/edt_loc_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_address_reg"
+        android:hint="@string/defLocation"
+        android:textColorHint="@color/Fonttitle"
+        android:textSize="@dimen/font17"
+        android:drawableEnd="@drawable/ic_blood_needed_location"/>
+
+    <CheckBox
+        android:id="@+id/cb_aggrement_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aggrement"
+        android:layout_marginTop="@dimen/dimen30"
+        android:layout_below="@id/edt_loc_reg"/>
+
+    <Button
+        android:id="@+id/btn_regis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_aggrement_reg"
+        android:layout_marginTop="@dimen/dimen30"
+        android:text="@string/registrasi"
+        android:background="@drawable/btn_putih_reverse"
+        android:textColor="@color/lightblue"
+        android:textSize="@dimen/dimen17"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
